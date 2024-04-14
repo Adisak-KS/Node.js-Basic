@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello EJS Template Engine</h1>
+    <p><%= products %></p>
+    
+    <ol>
+        <% for(index in products){ %>
+            <li><%= products[index] %></li>
+        <% } %>
+    </ol>
+
+    <!-- <ol>
+        <% for(i=0;i<products.length;i++){ %>
+            <li><%= products[i] %></li>
+        <% } %>
+    </ol> -->
+
+<!-- การเรียกใช้ทีละตัว
+    <p><%= products %></p>
+    <p><%= products[0] %></p>
+    <p><%= products[1] %></p>
+    <p><%= products[2] %></p>
+    <p><%= products[3] %></p> -->
+
+</body>
+</html>
